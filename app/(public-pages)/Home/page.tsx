@@ -5,8 +5,14 @@ import wikiClubSlider from '@/assets/img/club/wiki-club-slider.jpg'
 import wikiClubSlider1 from '@/assets/img/club/wiki-club-slider1.png'
 import wikiClubSlider2 from '@/assets/img/club/wiki-club-slider2.png'
 import FadeSlider from '@/app/(public-pages)/Home/components/FadeSlider'
+import CardGameWizard from "@/app/(public-pages)/Home/components/CardGameWizard";
+import {useState} from "react";
 
 const Page = () => {
+
+    const [openModalLogin, setOpenModalLogin] = useState(false)
+
+    const isAuthenticated = true;
 
     const sliderImages = [
         wikiClubSlider.src,
@@ -22,7 +28,9 @@ const Page = () => {
                     images={sliderImages}
                     className="h-[150px] md:h-[360px] 3xl:h-[500px] mt-5 club-container rounded-[20px] my-5"
                 />
-
+                <div className="grid grid-cols-1 xl:grid-cols-2 club-container gap-10 my-5">
+                    <CardGameWizard auth={isAuthenticated} setOpenModalLogin={setOpenModalLogin} />
+                </div>
             </main>
         </>
     )
