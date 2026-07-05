@@ -1,0 +1,31 @@
+.swiper {
+    height: 100%!important;
+}
+
+
+.swiper-pagination {
+    text-align: center !important;
+    padding-left: 0;
+    margin-top: 150px!important;
+}
+
+@media (min-width: 768px) {
+    .swiper-pagination {
+        text-align: left !important;
+        padding-left: 25px;
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    background: #AEAEAE !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #00E489 !important;
+}
+
+.prev-btn:active svg > path, .next-btn:active svg > path {
+    fill: #00E489 !important;
+}
