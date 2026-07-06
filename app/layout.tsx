@@ -23,7 +23,7 @@ export default function RootLayout({
         <html>
         <body>
             <div style={{direction:"rtl"}} className="min-h-screen flex flex-col">
-                <header>
+                <header className="sticky top-0 left-0 block z-10">
                     <ClubHeader auth={session}/>
                     {session ? (
                         <Menu auth={session}/>

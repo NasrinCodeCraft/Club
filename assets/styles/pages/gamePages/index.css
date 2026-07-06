@@ -1,0 +1,15 @@
+table.top-people tr{
+    border-bottom: 1px solid #D0D0D0;
+}
+
+table.top-people tr td{
+    padding: 5px 0;
+}
+
+.top-people-game tr td{
+    padding: 12px 0!important;
+}
+
+table.top-people tr:nth-child(3) {
+    border-bottom: none!important;
+}
