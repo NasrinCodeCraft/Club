@@ -21,7 +21,7 @@ const activeGlowStyle = {
 
 const items = [
     {label: 'قرعه کشی ماهانه', href:'/monthlyLottery'},
-    {label: 'ماموریت های ویکی', href:'/wikiMissions'},
+    {label: 'ماموریت های ویکی', href:'/Home'},
     {label: 'جایزه ها و تخفیف ها', href:'/prizesDiscounts'},
     {label: 'کلوپ بازی', href:'/gameClub'},
     {label: 'تاریخچه امتیازات', href:'/scoreHistory'}

@@ -8,8 +8,9 @@ import wikiClubSlider2 from '@/assets/img/club/wiki-club-slider2.png'
 import FadeSlider from '@/app/(public-pages)/Home/components/FadeSlider'
 import CardGameWizard from "@/app/(public-pages)/Home/components/CardGameWizard";
 import CardGameSlider from '@/app/(public-pages)/Home/components/CardGameSlider'
-
 import {useState} from "react";
+import ScoreCards from "@/app/(public-pages)/Home/components/ScoreCards";
+import WikiCards from "@/app/(public-pages)/Home/components/WikiCards";
 
 const Page = () => {
 
@@ -35,6 +36,12 @@ const Page = () => {
                     <CardGameWizard auth={isAuthenticated} setOpenModalLogin={setOpenModalLogin} />
                     <CardGameSlider auth={isAuthenticated} setOpenModalLogin={setOpenModalLogin} />
                 </div>
+
+                {isAuthenticated && (
+                    <ScoreCards />
+                )}
+
+                <WikiCards auth={isAuthenticated}/>
             </main>
         </>
     )
