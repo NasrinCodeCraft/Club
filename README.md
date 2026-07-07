@@ -2,8 +2,7 @@
 
 Live Preview:
 
-https://club-seven-red.vercel.app/Home
-
+https://club-zeta-three.vercel.app/Home
 
 ## 📸 Screenshots
 
