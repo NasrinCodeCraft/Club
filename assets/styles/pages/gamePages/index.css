@@ -13,3 +13,31 @@ table.top-people tr td{
 table.top-people tr:nth-child(3) {
     border-bottom: none!important;
 }
+
+.energy-fill {
+    fill: #EB5757;
+}
+
+.energy-fill.animation {
+    animation: energy-fill linear forwards 8s;
+    animation-play-state: running;
+}
+
+.energy-fill.animation.paused {
+    animation-play-state: paused;
+}
+
+@keyframes energy-fill {
+    0% {
+        width: 100%;
+        fill: #00E489;
+    }
+    50% {
+        width: 50%;
+        fill: #FCCE38;
+    }
+    100% {
+        width: 2%;
+        fill: #EB5757;
+    }
+}
